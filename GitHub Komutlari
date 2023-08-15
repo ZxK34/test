@@ -1,0 +1,174 @@
+1. git config
+
+    Bu komut, git etkinliklerinizle ilişkili bir yazar adı ve e-posta yapılandırmak 
+    için kullanılır. 
+
+    Kullanım: Yazar adını global olarak yapılandırmak için.
+
+    git config –global user.name [name]
+
+    Kullanım: Yazar adını yerel olarak yapılandırmak için.
+
+    git config user.name [name]
+
+    Kullanım: E-posta adreslerini yerel olarak yapılandırmak için.
+
+    git config user.email [email address]
+
+    Kullanım: E-posta adreslerini global olarak yapılandırmak için.
+
+    git config –global user.email [email address]
+
+2. git init
+
+    Bu komut, yeni bir git deposu başlatmak için kullanılır.
+
+    git init [repository name]
+
+    Not: Depoya bir ad vermezseniz, varsayılan olarak .git olur.
+
+3. git clone
+
+    Bu komut, uzak bir git deposunu klonlamak için kullanılır.
+
+    git clone [url]
+
+4. git add
+
+    Projenizi ya da belirttiğiniz bir dosyayı projeyi çalışma dizinine 
+    eklemek için kullanılır.
+
+    Kullanım: Belirli bir dosyayı eklemek için.
+
+    git add [filename]
+
+    Kullanım: Tüm proje dosyalarını eklemek için
+
+    git add 
+    
+5. git commit
+
+    Bu komut, bir dosyayı proje sürüm geçmişine kalıcı olarak kaydetmek için kullanılır. 
+
+    Kullanım: Aşamalı değişikliklerinizi taahhüt etmek için.
+
+    git commit -m [message]
+
+    Kullanım: Şimdiye kadarki tüm aşamalı ve aşamalı olmayan değişiklikleri 
+    yapmak için kullanılır.
+
+    git commit -a
+
+6. git diff
+
+    Bu komut, mevcut dosya değişikliklerini kontrol etmek için kullanılır.
+
+    Kullanım: Tüm aşamalandırılmamış dosya değişikliklerini kontrol etmek için.
+
+    git diff
+
+    Kullanım: Tüm aşamalı dosya değişikliklerini kontrol etmek için.
+
+    git diff -staged
+
+    Kullanım: İki git dalı arasındaki dosya değişikliklerini kontrol etmek için.
+
+    git diff [first branch] [second branch]
+
+7. git status
+
+    Bu komut, taahhüt edilen tüm dosyaları listelemek için kullanılır.
+
+    git status
+
+8. git reset
+
+    Bu komut, Git deposunun durumundaki yerel değişiklikleri geri almak için kullanılır.
+
+    git reset
+
+    Kullanım: Sıfırlama için kullanılır.
+
+    git reset [commit id]
+
+9. git rm
+
+    Bu komut, geçerli çalışma dizininden belirli bir dosyayı silmek için kullanılır ve silme 
+    işlemini  gerçekleştirir.
+
+    git rm [filename]
+
+10. git log
+
+    Bu komut, geçerli git dalının sürüm geçmişini listelemek için kullanılır.
+    git log
+
+11. git show
+
+    Bu komut, belirli bir işlemin meta verilerini ve dosya değişikliklerini
+    görüntülemek için kullanılır.
+    
+    git show [commit id]
+
+12. git tag
+    
+    Bu komut, belirtilen işleme etiketler vermek için kullanılır.
+
+    git tag [commit id]
+
+13. git branch
+
+    Bu komut, geçerli çalışma dizininden bir dal oluşturmak için kullanılır.
+    Kullanım: Yeni bir dal oluşturmak için.
+
+    git branch [branch name]
+    Kullanım: Dalı silmek için.
+
+    git branch -d [branch name]
+
+14. git checkout
+
+    Bu komut, farklı git dalları arasında geçiş yapmak için kullanılır.
+    Kullanım: Bir git dalını kontrol etmek için.
+    
+    git checkout [branch name]
+    Kullanım: Yeni bir dal oluşturup ve ona geçmek için.
+    
+    git checkout -b [branch name]
+
+15. git merge
+
+    Bu komut, belirtilen dalı mevcut dal ile birleştirmek için kullanılır.
+    git merge [branch name]
+
+16. git remote
+
+    Bu komut, yerel git deposunu uzak sunucuya bağlamak için kullanılır.
+    git remote add [variable name] [Remote Server Link]
+
+17. git push
+
+    Bu komut, aşamalı değişikliklerinizi uzak kod havuza göndermek için kullanılır.
+    git push [variable name] [remote repositry name]
+
+18. git pull
+
+    Bu komut, uzak depodaki değişiklikleri almak ve bunları 
+    mevcut çalışma dizini ile birleştirmek için kullanılır.
+    git pull [variable name] [remote repositry name]
+
+19. git stash
+
+    Bu komut, değiştirilen tüm dosyaları çalışma dizininde 
+    geçici olarak saklamak için  kullanılır.
+    Kullanım: Değiştirilen tüm izlenen dosyaları geçici olarak kaydetmek için.
+    
+    git stash
+    Kullanım: Tüm öğe listelerini saklamak için.
+
+    git stash list
+
+20. git fsck
+
+    Bu komut Git dosya sisteminin bütünlüğünü kontrol etmek için
+    kullanılır ve ayrıca bozuk nesnelerin belirlenmesine yardımcı olur.
